@@ -34,8 +34,3 @@ jobs:
       # - name: Push image
       #   run: docker push jrodga1604/docker-react
 
-      - name: Debug secret presence
-        run: |
-          echo "Username length: ${#DOCKERHUB_USERNAME}"
-        env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
