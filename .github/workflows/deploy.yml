@@ -23,11 +23,11 @@ jobs:
 
       # Build image
       - name: Build Docker image
-        run: docker build -t jrodga/docker-react -f Dockerfile.dev .
+        run: docker build -t jrodga1604/docker-react -f Dockerfile.dev .
 
       # Run tests inside container
       - name: Run tests
-        run: docker run -e CI=true jrodga/docker-react npm test
+        run: docker run -e CI=true jrodga1604/docker-react npm test
 
       # OPTIONAL — push image after tests pass
       # Uncomment if you want deployment
