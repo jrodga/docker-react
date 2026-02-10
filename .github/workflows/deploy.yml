@@ -31,6 +31,6 @@ jobs:
 
       # OPTIONAL — push image after tests pass
       # Uncomment if you want deployment
-      # - name: Push image
-      #   run: docker push jrodga1604/docker-react
+      - name: Push image
+        run: docker push jrodga1604/docker-react
 
